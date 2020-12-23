@@ -39,6 +39,9 @@ public class MainActivity extends AppCompatActivity {
                 view.setVisibility(View.VISIBLE);
                 view.setImageResource(R.color.design_default_color_primary);
             }
+            counter = 8;
+            button1 = null;
+            button2 = null;
         });
 
         for (ImageView view : views) {
@@ -72,10 +75,10 @@ public class MainActivity extends AppCompatActivity {
             } else {
                 button1.setImageResource(R.color.design_default_color_primary);
                 button2.setImageResource(R.color.design_default_color_primary);
-                button1 = null;
-                button2 = null;
                 Log.d("X", "not good");
             }
+            button1 = null;
+            button2 = null;
             setImageViewsClickable(true);
         }, 1000);
 
